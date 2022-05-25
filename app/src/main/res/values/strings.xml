@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Phun App</string>
+    <string name="failed_to_connect">Failed to connect</string>
+</resources>

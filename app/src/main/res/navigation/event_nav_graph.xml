@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_nav_graph"
+    app:startDestination="@id/eventListFragment">
+
+    <fragment
+        android:id="@+id/eventListFragment"
+        android:name="com.fahima.assessment.ui.EventListFragment"
+        android:label="EventListFragment">
+        <action
+            android:id="@+id/action_eventListFragment_to_eventDetailsFragment"
+            app:destination="@id/eventDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/eventDetailsFragment"
+        android:name="com.fahima.assessment.ui.EventDetailsFragment"
+        android:label="EventDetailsFragment">
+        <argument
+            android:name="event"
+            app:argType="com.fahima.assessment.model.Event" />
+    </fragment>
+
+</navigation>
